@@ -1,0 +1,23 @@
+<html>
+<head>
+    </head>
+    <body>
+        <button onclick="add()" class="button">add</button>
+        <p id="add"></p>
+<script>
+function add() {
+            var number = Number(prompt('type a number'))
+            var number2 = Number(prompt('type another number'))
+            
+            if(isNaN(number) || isNaN(number2)){
+                alert("Error in the input")
+            } 
+            else {
+                total = number+number2;
+                console.log(total)
+                document.getElementById("add").innerHTML=total;
+        }
+}
+    </script>
+    </body>
+    </html>
