@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        counter project
+    </title>
+</head>
+
+<body style="background-color: aqua">
+    
+    <button type="button" onclick="increaseValue()">Increment</button>
+    <p id="increment"></p>
+    <br>
+    <br>
+    <button type="button" onclick="">Decrement</button>
+    <br>
+    <br>
+    <button type="button" onclick="">Reset</button>
+
+    <script>
+        var x = 0;
+        function increaseValue() {
+            
+            x++;
+            document.getElementById("increment").innerHTML = x;
+        }
+    </script>
+
+
+</body>
+
+</html>
