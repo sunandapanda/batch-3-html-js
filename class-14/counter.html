@@ -17,7 +17,7 @@
         <p id="decrement"></p>
     <br>
     <br>
-    <button type="button" onclick="resetvvalue()">Reset</button>
+    <button type="button" onclick="resetValue()">Reset</button>
 
     <script>
         var x = 0;
@@ -25,6 +25,19 @@
             
             x++;
             document.getElementById("increment").innerHTML = x;
+        }
+        var y = 0
+        function decreaseValue() {
+            
+            y--;
+            document.getElementById("decrement").innerHTML = y;
+        }
+        
+        function resetValue() {
+            x = 0;
+            y = 0;
+            document.getElementById("increment").innerHTML = x;
+            document.getElementById("decrement").innerHTML = y;
         }
     </script>
 
