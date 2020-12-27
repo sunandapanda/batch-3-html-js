@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>
+        Clock project
+    </title>
+    <style>
+        .tabBlock {
+            background-color: #57574f;
+            border: solid 0px #FFA54F;
+            /*            border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;*/
+            max-width: 200px;
+            width: 100%;
+            overflow: hidden;
+            display: block;
+        }
+        .clock {
+            vertical-align: middle;
+            font-family: Orbitron;
+            font-size: 40px;
+            font-weight: normal;
+            color: #FFF;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body onload="digitalClock()">
+    <script>
+        function digitalClock() {
+            var dateValue = new Date();
+            console.log(dateValue)
+            var hours = dateValue.getHours();
+            var minutes = dateValue.getMinutes();
+            var sec = dateValue.getSeconds();
+            
+            document.getElementById("hour-minute").innerHTML = hours + ":" + minutes;
+            
+            if (hours > 12) {
+            document.getElementById('dc_hour').innerHTML = 'PM';
+        } else {
+            document.getElementById('dc_hour').innerHTML = 'AM';
+        }
+            
+        }
+    </script>
+    <div style="background-color:turquoise;
+        width:50%;margin:auto;padding:50px 20px 50px;">
+        <table align="center">
+            <tr>
+                <td class="clock" id="hour-minute">
+
+                </td>
+                <td>
+                    <table>
+                    
+                    </table>
+
+                </td>
+
+            </tr>
+
+
+        </table>
+
+
+    </div>
+</body>
+
+</html>
