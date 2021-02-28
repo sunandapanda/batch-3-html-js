@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(to right, red, blue);;    
+}
+* {
+    box-sizing: border-box;
+}
+
+.main-div {
+    width: 400px;
+    margin: auto;
+    height:auto;
+    background: black;
+    padding: 15px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.button {
+    width: 85;
+    height: 50;
+    font-size: 25;
+    margin: 2;
+    cursor: pointer;  
+}
